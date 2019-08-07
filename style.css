@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    background: 
+        radial-gradient(circle at top right, rgba(242,205,93,1) 10%, rgba(255,255,255,0)),
+        radial-gradient(circle at top left, rgba(58,23,114,1) 10%, rgba(255,255,255,0)),
+        radial-gradient(circle at bottom right, rgba(83,152,190,1) 10%, rgba(255,255,255,0)),
+        radial-gradient(circle at bottom left, rgba(97,213,134,1) 10%, rgba(255,255,255,0));
+    border: 1px solid rgba(200, 200, 200, 1);
+    border-radius: 12px;
+    box-shadow: 0 12px 18px rgba(0, 0, 0, .1);
+
+}
+.profile{
+    width: 200px;
+    height: 200px;
+    border:2px solid ;
+    border-radius: 50%;
+    box-shadow: 0 12px 18px rgba(65, 5, 73, 0.5); 
+}
+.top-section{
+  
+    color:#fff;
+    height: 100vh;
+    font-family:monospace;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.site-header{
+    margin: 10px;
+}
+.link{
+    color:#fff;
+}
+.edit{
+    color: #fff;
+}
+#last-line{
+    text-align: center;
+    position: relative;
+    bottom: 150px;
+    color: darkblue;
+    font-size: 1.5em;
+    line-height: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.effect{
+    padding: 10px;
+    font-size: 1.5em;
+}
+.effect:hover{
+    transform: scale(1.7);
+}
+.twitt{color:#1DA1F2 ;}
+.face{color: #3B579D}
+.git{color: #000;}
+.post{color: rgb(182, 50, 127);}
+
+a[data-tooltip]:before{
+    content: "";
+    position: absolute;
+    border-top: 20px solid #007eff;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    
+    opacity: 0;
+    transition: all .05s linear;
+}
+a[data-tooltip]:after{
+    content: attr(data-tooltip);
+    position: absolute;
+    color: #fff;
+    border-top-color: -39px;
+    background: #007eff;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all .1s linear;
+}
+a[data-tooltip]:hover,a[data-tooltip]:hover:after{
+    opacity: 1;
+}
